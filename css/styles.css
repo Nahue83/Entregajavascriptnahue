@@ -1,0 +1,249 @@
+/* ---------------------- */
+/*  ESTILOS GENERALES     */
+/* ---------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5f9;
+    color: #444;
+}
+
+header {
+    background: #ff99b6;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------- */
+/*   TÍTULOS Y SECCIONES  */
+/* ---------------------- */
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #ff5c8a;
+}
+
+/* ---------------------- */
+/*        CARDS           */
+/* ---------------------- */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.card {
+    width: 230px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 150, 180, 0.25);
+    padding-bottom: 15px;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #ff5c8a;
+}
+
+.card p {
+    margin: 0;
+    font-size: 18px;
+    color: #444;
+}
+
+.btn-agregar {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff99b6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-agregar:hover {
+    background: #ff5c8a;
+}
+
+/* ---------------------- */
+/*     CARRITO FLOTANTE   */
+/* ---------------------- */
+
+#carritoFlotante {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background: #ff5c8a;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(255, 100, 150, 0.4);
+    z-index: 999;
+}
+
+#carritoFlotante:hover {
+    background: #ff99b6;
+}
+
+/* ---------------------- */
+/*     PANEL DEL CARRITO  */
+/* ---------------------- */
+
+#panelCarrito {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 25px;
+    width: 270px;
+    background: #ffe6ef;
+    border: 2px solid #ff99b6;
+    border-radius: 15px;
+    padding: 15px;
+    z-index: 999;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(255, 150, 180, 0.4);
+}
+
+/* Cada item dentro del carrito */
+.carrito-item {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(255, 150, 180, 0.3);
+}
+
+.carrito-item span {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+/* Botones de control */
+.carrito-controles {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.carrito-controles button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Botón sumar */
+.carrito-controles button:nth-child(1) {
+    background: #ff99b6;
+    color: white;
+}
+.carrito-controles button:nth-child(1):hover {
+    background: #ff5c8a;
+}
+
+/* Botón restar */
+.carrito-controles button:nth-child(2) {
+    background: #ffb7cc;
+    color: white;
+}
+.carrito-controles button:nth-child(2):hover {
+    background: #ff7aa3;
+}
+
+/* Botón eliminar */
+.carrito-controles button:nth-child(3) {
+    background: #ff5c8a;
+    color: white;
+}
+.carrito-controles button:nth-child(3):hover {
+    background: #e6004c;
+}
+
+.total-carrito {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #ff2d6d;
+}
+
+/* ---------------------- */
+/*   BOTONES FINALES      */
+/* ---------------------- */
+
+.btn-finalizar,
+.btn-vaciar {
+    width: 260px;
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Finalizar compra */
+.btn-finalizar {
+    background: #ff5c8a;
+}
+.btn-finalizar:hover {
+    background: #ff2d6d;
+}
+
+/* Vaciar carrito */
+.btn-vaciar {
+    background: #ff99b6;
+}
+.btn-vaciar:hover {
+    background: #ff5c8a;
+}
